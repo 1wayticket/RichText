@@ -5,12 +5,12 @@ def version_code = 3
 def version_name = "1.0.2"
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion "25.0.2"
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
 
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion 26
+        targetSdkVersion 28
         versionCode version_code
         versionName version_name
 
@@ -29,9 +29,9 @@ android {
 }
 
 dependencies {
-    compile 'com.squareup.okhttp3:okhttp:3.7.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.7.0'
 //    compile project(':richtext')
-    compile 'com.zzhoujay.richtext:richtext:3.0.1'
+    implementation 'com.zzhoujay.richtext:richtext:3.0.1'
 }
 
 publish {
